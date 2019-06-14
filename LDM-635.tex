@@ -47,6 +47,17 @@
 \begin{document}
 \maketitle
 
+The LSST DM System needs to maintain a set of data storage resources
+distributed between the Base Center and NCSA to hold the record of
+the survey and to be used by Prompt Products, Data Release Products,
+and Data Access Center (DAC) services.  The Data Backbone (DBB) is the component that will provide storage, management, and replication for all LSST data products.
+
+The scope of the Data Backbone includes both files and data maintained by relational and other database engines.  While the Data Backbone provides read-only data service to the US and Chilean DACs, it will not host data stores where DAC users create state.  For example,
+DAC resources such as Qserv and User Database Workspaces are provisioned in the context of a DAC, not the Data Backbone.
+
+This document presents requirements for the Data Backbone.  Currently these initial requirements are derived directly from \citeds{LSE-61} requirements.  The requirements will increase in number and detail
+as requirements flow down from the other components/services that use the Data Backbone.
+
 \section{Pipeline Availability}
 
 \label{DMS-DBB-REQ-0001}
