@@ -9,9 +9,9 @@
 
 %% Retrieve date and model version
 \setDocUpstreamLocation{MagicDraw SysML}
-\setDocUpstreamVersion{239}
+\setDocUpstreamVersion{240}
 
-\date{2019-06-11}
+\date{2019-06-14}
 
 %% Allow arbitrary latex to be inserted at the end of the document.
 %% Define a new version of this command in metadata.tex. It will
@@ -58,7 +58,9 @@ DAC resources such as Qserv and User Database Workspaces are provisioned in the 
 This document presents requirements for the Data Backbone.  Currently these initial requirements are derived directly from \citeds{LSE-61} requirements.  The requirements will increase in number and detail
 as requirements flow down from the other components/services that use the Data Backbone.
 
-\section{Pipeline Availability}
+\section{Core Requirements}
+
+\subsection{Pipeline Availability}
 
 \label{DMS-DBB-REQ-0001}
 \textbf{ID:} DMS-DBB-REQ-0001
@@ -85,7 +87,7 @@ productionMaxDowntime
 DMS-REQ-0008:
 Pipeline Availability \newline
 
-\section{Raw Science Image Metadata}
+\subsection{Raw Science Image Metadata}
 
 \label{DMS-DBB-REQ-0002}
 \textbf{ID:} DMS-DBB-REQ-0002
@@ -98,7 +100,7 @@ For each raw science image, the Data Backbone shall store image metadata includi
 DMS-REQ-0068:
 Raw Science Image Metadata \newline
 
-\section{Difference Exposure Attributes}
+\subsection{Difference Exposure Attributes}
 
 \label{DMS-DBB-REQ-0003}
 \textbf{ID:} DMS-DBB-REQ-0003
@@ -111,7 +113,7 @@ For each Difference Exposure, the Data Backbone Services shall store at least th
 DMS-REQ-0074:
 Difference Exposure Attributes \newline
 
-\section{Maintain Archive Publicly Accessible}
+\subsection{Maintain Archive Publicly Accessible}
 
 \label{DMS-DBB-REQ-0004}
 \textbf{ID:} DMS-DBB-REQ-0004
@@ -127,7 +129,7 @@ The scientific intent is satisfied by keeping data products from the current DRP
 DMS-REQ-0077:
 Maintain Archive Publicly Accessible \newline
 
-\section{Solar System Objects Available Within Specified Time}
+\subsection{Solar System Objects Available Within Specified Time}
 
 \label{DMS-DBB-REQ-0005}
 \textbf{ID:} DMS-DBB-REQ-0005
@@ -154,7 +156,7 @@ L1PublicT
 DMS-REQ-0089:
 Solar System Objects Available Within Specified Time \newline
 
-\section{Keep Historical Alert Archive}
+\subsection{Keep Historical Alert Archive}
 
 \label{DMS-DBB-REQ-0006}
 \textbf{ID:} DMS-DBB-REQ-0006
@@ -170,7 +172,7 @@ Part of L1 Data Products which have availability requirements at both endpoints.
 DMS-REQ-0094:
 Keep Historical Alert Archive \newline
 
-\section{Public access to Engineering and Facility Database Archive data}
+\subsection{Public access to Engineering and Facility Database Archive data}
 
 \label{DMS-DBB-REQ-0007}
 \textbf{ID:} DMS-DBB-REQ-0007
@@ -197,7 +199,7 @@ L1PublicT
 DMS-REQ-0102:
 Provide Engineering \& Facility Database Archive \newline
 
-\section{Level 3 Access to Metadata and Provenance}
+\subsection{Level 3 Access to Metadata and Provenance}
 
 \label{DMS-DBB-REQ-0008}
 \textbf{ID:} DMS-DBB-REQ-0008
@@ -213,7 +215,7 @@ This requirement does not mean that the LSST Data Backbone is responsible for sa
 DMS-REQ-0120:
 Level 3 Data Product Self Consistency \newline
 
-\section{Maintaining and validatting exported data}
+\subsection{Maintaining and validatting exported data}
 
 \label{DMS-DBB-REQ-0009}
 \textbf{ID:} DMS-DBB-REQ-0009
@@ -229,7 +231,7 @@ Maintaining is doing things like checking to see whether anything has been accid
 DMS-REQ-0122:
 Access to catalogs for external Level 3 processing \newline
 
-\section{Federation with external catalogs}
+\subsection{Federation with external catalogs}
 
 \label{DMS-DBB-REQ-0010}
 \textbf{ID:} DMS-DBB-REQ-0010
@@ -245,7 +247,7 @@ The project will provide specification for how external data must be provided in
 DMS-REQ-0124:
 Federation with external catalogs \newline
 
-\section{Level 3 image processing facilitation}
+\subsection{Level 3 image processing facilitation}
 
 \label{DMS-DBB-REQ-0011}
 \textbf{ID:} DMS-DBB-REQ-0011
@@ -263,7 +265,7 @@ Maintaining is doing things like checking to see whether anything has been accid
 DMS-REQ-0126:
 Access to images for external Level 3 processing \newline
 
-\section{Calibration Data Products and Image Provenance}
+\subsection{Calibration Data Products and Image Provenance}
 
 \label{DMS-DBB-REQ-0012}
 \textbf{ID:} DMS-DBB-REQ-0012
@@ -278,7 +280,7 @@ Calibration Data Products \newline
 DMS-REQ-0132:
 Calibration Image Provenance \newline
 
-\section{Daily Calibration Products Update Availability}
+\subsection{Daily Calibration Products Update Availability}
 
 \label{DMS-DBB-REQ-0013}
 \textbf{ID:} DMS-DBB-REQ-0013
@@ -321,7 +323,7 @@ calProcTime
 DMS-REQ-0131:
 Calibration Images Available Within Specified Time \newline
 
-\section{Optimization of Cost, Reliability and Availability in Order}
+\subsection{Optimization of Cost, Reliability and Availability in Order}
 
 \label{DMS-DBB-REQ-0014}
 \textbf{ID:} DMS-DBB-REQ-0014
@@ -337,7 +339,7 @@ Reliability of services needed for production over availability/access for end u
 DMS-REQ-0161:
 Optimization of Cost, Reliability and Availability in Order \newline
 
-\section{Pipeline Throughput}
+\subsection{Pipeline Throughput}
 
 \label{DMS-DBB-REQ-0015}
 \textbf{ID:} DMS-DBB-REQ-0015
@@ -353,7 +355,7 @@ While the crosstalked raw files will not be retrieved from the Data Backbone, te
 DMS-REQ-0162:
 Pipeline Throughput \newline
 
-\section{Re-processing Capacity}
+\subsection{Re-processing Capacity}
 
 \label{DMS-DBB-REQ-0016}
 \textbf{ID:} DMS-DBB-REQ-0016
@@ -380,7 +382,7 @@ drProcessingPeriod
 DMS-REQ-0163:
 Re-processing Capacity \newline
 
-\section{Temporary Storage for Communications Links}
+\subsection{Temporary Storage for Communications Links}
 
 \label{DMS-DBB-REQ-0017}
 \textbf{ID:} DMS-DBB-REQ-0017
@@ -410,7 +412,7 @@ tempStorageRelMTTR
 DMS-REQ-0164:
 Temporary Storage for Communications Links \newline
 
-\section{Infrastructure Sizing for “catching up”}
+\subsection{Infrastructure Sizing for “catching up”}
 
 \label{DMS-DBB-REQ-0018}
 \textbf{ID:} DMS-DBB-REQ-0018
@@ -423,7 +425,7 @@ The infrastructure for the Data Backbone Services will be sized such that after 
 DMS-REQ-0165:
 Infrastructure Sizing for "catching up" \newline
 
-\section{Fault Tolerance Features}
+\subsection{Fault Tolerance Features}
 
 \label{DMS-DBB-REQ-0019}
 \textbf{ID:} DMS-DBB-REQ-0019
@@ -436,7 +438,7 @@ The Data Backbone Services will incorporate infrastructure with fault-tolerance 
 DMS-REQ-0166:
 Incorporate Fault-Tolerance \newline
 
-\section{Incorporate Autonomics}
+\subsection{Incorporate Autonomics}
 
 \label{DMS-DBB-REQ-0020}
 \textbf{ID:} DMS-DBB-REQ-0020
@@ -449,7 +451,7 @@ The infrastructure for the Data Backbone Services will incorporate sufficient ca
 DMS-REQ-0167:
 Incorporate Autonomics \newline
 
-\section{Base Facility Infrastructure}
+\subsection{Base Facility Infrastructure}
 
 \label{DMS-DBB-REQ-0021}
 \textbf{ID:} DMS-DBB-REQ-0021
@@ -465,7 +467,7 @@ TBD:  Determine details to guide infrastructure sizing such as number of DB conn
 DMS-REQ-0176:
 Base Facility Infrastructure \newline
 
-\section{Archive Center}
+\subsection{Archive Center}
 
 \label{DMS-DBB-REQ-0022}
 \textbf{ID:} DMS-DBB-REQ-0022
@@ -478,7 +480,7 @@ The infrastructure of the Data Backbone Services at the Archive Center shall sup
 DMS-REQ-0185:
 Archive Center \newline
 
-\section{Archive Center Disaster Recovery}
+\subsection{Archive Center Disaster Recovery}
 
 \label{DMS-DBB-REQ-0023}
 \textbf{ID:} DMS-DBB-REQ-0023
@@ -491,7 +493,7 @@ The Data Backbone Services shall provide disaster recovery support preventing lo
 DMS-REQ-0186:
 Archive Center Disaster Recovery \newline
 
-\section{No Limit on Data Backbone Endpoints}
+\subsection{No Limit on Data Backbone Endpoints}
 
 \label{DMS-DBB-REQ-0024}
 \textbf{ID:} DMS-DBB-REQ-0024
@@ -504,7 +506,7 @@ The number of Data Backbone endpoints shall be limited only by available interna
 DMS-REQ-0197:
 No Limit on Data Access Centers \newline
 
-\section{Exposure Catalog}
+\subsection{Exposure Catalog}
 
 \label{DMS-DBB-REQ-0025}
 \textbf{ID:} DMS-DBB-REQ-0025
@@ -520,7 +522,7 @@ This requirement includes the catalog file itself as well as the contents in a q
 DMS-REQ-0266:
 Exposure Catalog \newline
 
-\section{Catalog}
+\subsection{Catalog}
 
 \label{DMS-DBB-REQ-0026}
 \textbf{ID:} DMS-DBB-REQ-0026
@@ -536,7 +538,7 @@ This requirement includes the catalog file itself as well as the contents in a q
 DMS-REQ-0269:
 DIASource Catalog \newline
 
-\section{DIAObject Catalog}
+\subsection{DIAObject Catalog}
 
 \label{DMS-DBB-REQ-0027}
 \textbf{ID:} DMS-DBB-REQ-0027
@@ -552,7 +554,7 @@ This requirement includes the catalog file itself as well as the contents in a q
 DMS-REQ-0271:
 DIAObject Catalog \newline
 
-\section{SSObject Catalog}
+\subsection{SSObject Catalog}
 
 \label{DMS-DBB-REQ-0028}
 \textbf{ID:} DMS-DBB-REQ-0028
@@ -568,7 +570,7 @@ This requirement includes the catalog file itself as well as the contents in a q
 DMS-REQ-0273:
 SSObject Catalog \newline
 
-\section{DIASource Precovery}
+\subsection{DIASource Precovery}
 
 \label{DMS-DBB-REQ-0029}
 \textbf{ID:} DMS-DBB-REQ-0029
@@ -606,7 +608,7 @@ L1PublicT
 DMS-REQ-0287:
 DIASource Precovery \newline
 
-\section{Query Repeatability}
+\subsection{Query Repeatability}
 
 \label{DMS-DBB-REQ-0030}
 \textbf{ID:} DMS-DBB-REQ-0030
@@ -622,7 +624,7 @@ Schemas may change as long as the front-end services adapt old queries to the ne
 DMS-REQ-0291:
 Query Repeatability \newline
 
-\section{Uniqueness of IDs Across Data Releases}
+\subsection{Uniqueness of IDs Across Data Releases}
 
 \label{DMS-DBB-REQ-0031}
 \textbf{ID:} DMS-DBB-REQ-0031
@@ -638,7 +640,7 @@ For example, DR4 and DR5 (or any other) release will share no identical Object, 
 DMS-REQ-0292:
 Uniqueness of IDs Across Data Releases \newline
 
-\section{Selection of Datasets}
+\subsection{Selection of Datasets}
 
 \label{DMS-DBB-REQ-0032}
 \textbf{ID:} DMS-DBB-REQ-0032
@@ -651,7 +653,7 @@ A Dataset may consist of one or more pixel images, a set of records in a file or
 DMS-REQ-0293:
 Selection of Datasets \newline
 
-\section{Processing of Datasets}
+\subsection{Processing of Datasets}
 
 \label{DMS-DBB-REQ-0033}
 \textbf{ID:} DMS-DBB-REQ-0033
@@ -667,7 +669,7 @@ The requirement is limited to within a single processing campaign.   It is not j
 DMS-REQ-0294:
 Processing of Datasets \newline
 
-\section{Data Product Ingest}
+\subsection{Data Product Ingest}
 
 \label{DMS-DBB-REQ-0034}
 \textbf{ID:} DMS-DBB-REQ-0034
@@ -680,7 +682,7 @@ The Data Backbone Services shall provide software for designated staff or proces
 DMS-REQ-0299:
 Data Product Ingest \newline
 
-\section{Raw Data Archiving Reliability}
+\subsection{Raw Data Archiving Reliability}
 
 \label{DMS-DBB-REQ-0035}
 \textbf{ID:} DMS-DBB-REQ-0035
@@ -710,7 +712,7 @@ dataLossMax
 DMS-REQ-0309:
 Raw Data Archiving Reliability \newline
 
-\section{Un-Archived Data Product Cache}
+\subsection{Un-Archived Data Product Cache}
 
 \label{DMS-DBB-REQ-0036}
 \textbf{ID:} DMS-DBB-REQ-0036
@@ -740,7 +742,7 @@ l1CacheLifetime
 DMS-REQ-0310:
 Un-Archived Data Product Cache \newline
 
-\section{Level 1 Data Product Access}
+\subsection{Level 1 Data Product Access}
 
 \label{DMS-DBB-REQ-0037}
 \textbf{ID:} DMS-DBB-REQ-0037
@@ -753,7 +755,7 @@ The Data Backbone shall store and replicate a Level 1 Database for query by scie
 DMS-REQ-0312:
 Level 1 Data Product Access \newline
 
-\section{Level 1 and 2 Catalog Access}
+\subsection{Level 1 and 2 Catalog Access}
 
 \label{DMS-DBB-REQ-0038}
 \textbf{ID:} DMS-DBB-REQ-0038
@@ -771,7 +773,7 @@ Some catalogs from the Data Releases may be only be stored in QServ (which is no
 DMS-REQ-0313:
 Level 1 \& 2 Catalog Access \newline
 
-\section{Compute Platform Heterogeneity}
+\subsection{Compute Platform Heterogeneity}
 
 \label{DMS-DBB-REQ-0039}
 \textbf{ID:} DMS-DBB-REQ-0039
@@ -787,7 +789,7 @@ The necessity of replacing hardware throughout the course of the survey essentia
 DMS-REQ-0314:
 Compute Platform Heterogeneity \newline
 
-\section{DIAForcedSource Catalog}
+\subsection{DIAForcedSource Catalog}
 
 \label{DMS-DBB-REQ-0040}
 \textbf{ID:} DMS-DBB-REQ-0040
@@ -803,7 +805,7 @@ This requirement includes the catalog file itself as well as the contents in a q
 DMS-REQ-0317:
 DIAForcedSource Catalog \newline
 
-\section{Unscheduled Downtime}
+\subsection{Unscheduled Downtime}
 
 \label{DMS-DBB-REQ-0041}
 \textbf{ID:} DMS-DBB-REQ-0041
@@ -835,7 +837,7 @@ DMDowntime
 DMS-REQ-0318:
 Data Management Unscheduled Downtime \newline
 
-\section{Special Programs Database}
+\subsection{Special Programs Database}
 
 \label{DMS-DBB-REQ-0042}
 \textbf{ID:} DMS-DBB-REQ-0042
@@ -851,7 +853,7 @@ Separate database tables are prefered over the same database table with a label 
 DMS-REQ-0322:
 Special Programs Database \newline
 
-\section{Persisting Data Products}
+\subsection{Persisting Data Products}
 
 \label{DMS-DBB-REQ-0043}
 \textbf{ID:} DMS-DBB-REQ-0043
@@ -864,7 +866,7 @@ All per-band deep coadds and best seeing coadds shall be kept indefinitely and m
 DMS-REQ-0334:
 Persisting Data Products \newline
 
-\section{Targeted Coadds}
+\subsection{Targeted Coadds}
 
 \label{DMS-DBB-REQ-0044}
 \textbf{ID:} DMS-DBB-REQ-0044
@@ -877,7 +879,7 @@ The Data Backbone Services shall be sized such that all generated coadds that co
 DMS-REQ-0338:
 Targeted Coadds \newline
 
-\section{Tracking Characterization Changes Between Data Releases}
+\subsection{Tracking Characterization Changes Between Data Releases}
 
 \label{DMS-DBB-REQ-0045}
 \textbf{ID:} DMS-DBB-REQ-0045
@@ -893,7 +895,7 @@ This requirement covers subsets of data already in databases in the Data Backbon
 DMS-REQ-0339:
 Tracking Characterization Changes Between Data Releases \newline
 
-\section{Constraints on Level 1 Special Program Products Generation}
+\subsection{Constraints on Level 1 Special Program Products Generation}
 
 \label{DMS-DBB-REQ-0046}
 \textbf{ID:} DMS-DBB-REQ-0046
@@ -931,7 +933,7 @@ L1PublicT
 DMS-REQ-0344:
 Constraints on Level 1 Special Program Products Generation \newline
 
-\section{Raw Data Availability}
+\subsection{Raw Data Availability}
 
 \label{DMS-DBB-REQ-0047}
 \textbf{ID:} DMS-DBB-REQ-0047
@@ -946,7 +948,7 @@ download.
 DMS-REQ-0346:
 Data Availability \newline
 
-\section{Access to Previous Data Releases}
+\subsection{Access to Previous Data Releases}
 
 \label{DMS-DBB-REQ-0048}
 \textbf{ID:} DMS-DBB-REQ-0048
@@ -976,7 +978,7 @@ nDRMin
 DMS-REQ-0363:
 Access to Previous Data Releases \newline
 
-\section{Data Access Services}
+\subsection{Data Access Services}
 
 \label{DMS-DBB-REQ-0049}
 \textbf{ID:} DMS-DBB-REQ-0049
@@ -1017,7 +1019,7 @@ nDRTot
 DMS-REQ-0364:
 Data Access Services \newline
 
-\section{Operations Subsets}
+\subsection{Operations Subsets}
 
 \label{DMS-DBB-REQ-0050}
 \textbf{ID:} DMS-DBB-REQ-0050
@@ -1030,7 +1032,7 @@ The Data Backbone Services shall be designed to permit the service of operations
 DMS-REQ-0365:
 Operations Subsets \newline
 
-\section{Subsets Support}
+\subsection{Subsets Support}
 
 \label{DMS-DBB-REQ-0051}
 \textbf{ID:} DMS-DBB-REQ-0051
@@ -1046,7 +1048,7 @@ This means that the “toolkit” of Data Backbone Services should include eleme
 DMS-REQ-0366:
 Subsets Support \newline
 
-\section{Access Services Performance}
+\subsection{Access Services Performance}
 
 \label{DMS-DBB-REQ-0052}
 \textbf{ID:} DMS-DBB-REQ-0052
@@ -1073,7 +1075,7 @@ nDRMin
 DMS-REQ-0367:
 Access Services Performance \newline
 
-\section{Implementation Provisions}
+\subsection{Implementation Provisions}
 
 \label{DMS-DBB-REQ-0053}
 \textbf{ID:} DMS-DBB-REQ-0053
@@ -1103,7 +1105,7 @@ nDRMin
 DMS-REQ-0368:
 Implementation Provisions \newline
 
-\section{Evolution}
+\subsection{Evolution}
 
 \label{DMS-DBB-REQ-0054}
 \textbf{ID:} DMS-DBB-REQ-0054
@@ -1116,7 +1118,7 @@ The Data Backbone Servcies shall be designed to accommodate evolution of the LSS
 DMS-REQ-0369:
 Evolution \newline
 
-\section{Older Release Behavior}
+\subsection{Older Release Behavior}
 
 \label{DMS-DBB-REQ-0055}
 \textbf{ID:} DMS-DBB-REQ-0055
@@ -1143,7 +1145,7 @@ nDRMin
 DMS-REQ-0370:
 Older Release Behavior \newline
 
-\section{Atomic Accessibility}
+\subsection{Atomic Accessibility}
 
 \label{DMS-DBB-REQ-0056}
 \textbf{ID:} DMS-DBB-REQ-0056
